@@ -1,0 +1,171 @@
+html,
+body {
+  margin: 0 0.3em;
+  background: #4ca78b;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #0cf;
+}
+li {
+  list-style-type: none;
+}
+header h1 {
+  font-size: 1.3em;
+  font-weight: 800;
+  margin-top: 10px;
+  float: left;
+}
+header a {
+  color: #fd0;
+  transition: color 0.4s ease-out;
+}
+header a:hover {
+  color: #0cf;
+}
+header span {
+  color: #bcf4f0;
+}
+header img {
+  width: 40px;
+  height: 40px;
+  float: right;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-out;
+}
+header img:hover {
+  opacity: 1;
+}
+
+/*******************
+    Main Content
+********************/
+
+.tools {
+  clear: both;
+  background: #cdebe9;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
+  height: 40px;
+  border-radius: 2px;
+  box-shadow: 3px 3px 5px #444;
+}
+.tools div {
+  float: left;
+}
+.tool-dfn {
+  position: relative;
+  top: 0.61em;
+}
+.tool-dfn p {
+  font-size: 0.8em;
+}
+.color {
+  margin: 5px;
+  background: #444;
+  border-radius: 2px;
+  width: 30px;
+  height: 30px;
+  transition: border 0.3s ease-out;
+  cursor: pointer;
+}
+.color:hover {
+  border: 1px solid #fff;
+}
+.fa {
+  margin: 0;
+  padding: 5px;
+  position: relative;
+  transition: color 0.3s ease-out;
+  cursor: pointer;
+}
+.fa:hover {
+  color: #0cf;
+}
+.fa-undo {
+  font-size: 1.3em;
+  top: 0.2em;
+  color: #008CBA;
+}
+.fa-close {
+  font-size: 1.7em;
+  top: 0;
+  color: #e86767;
+}
+.misc {
+  float: right !important;
+}
+.range-slider {
+  width: 20%;
+  height: 10px;
+  margin: 0.9em 0.6em;
+}
+.range-slider-handle {
+  width: 0.7em;
+  height: 1em;
+  top: -0.25em;
+}
+.range-slider-active-segment {
+  background: #0cf;
+  height: 10px;
+}
+.canvas {
+  text-align: center;
+}
+canvas {
+  background: #fefefe;
+  cursor: url(../img/pen.png), crosshair;
+  width: 100%;
+  margin-top: 5px;
+  max-width: 800px;
+  height: 65vh;
+  box-shadow: 3px 3px 2px #444;
+}
+
+@media screen and (min-width: 480px) {
+  .range-slider {
+    width: 28%;
+  }
+  .tool-dfn p {
+    font-size: 0.9em;
+  }
+  canvas {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 900px) {
+  header img {
+    position: relative;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+  }
+}
+/**************
+    Footer
+*/
+
+footer p {
+  color: #eee;
+  font-size: 0.7em;
+  text-align: center;
+  letter-spacing: 0.5px;
+  width: 90%;
+  margin: 0 auto;
+}
+footer a {
+  transition: color 0.3s ease-out;
+}
+footer a:hover {
+  color: #0ff;
+}

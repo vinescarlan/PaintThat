@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>PaintThat | A simple painting web application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/foundation.css" rel="stylesheet" />
+    <link href="css/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="index.html">Paint<span>That</span>.com</a></h1>
+      <a href="#">
+        <img src="img/github.png" alt="View source code on Github" title="View source code on Github" />
+      </a>
+    </header>
+
+    <section class="tools">
+      <div class="color" title="Color"></div>
+
+      <div class="tool-dfn">
+        <p>Size</p>
+      </div>
+      <div class="range-slider radius" data-slider data-options="start: 1; end: 15;">
+        <span class="range-slider-handle" role="slider" tabindex="0"></span>
+        <span class="range-slider-active-segment"></span>
+        <input type="hidden">
+      </div>
+
+      <div class="tool-dfn">
+        <p>Fill</p>
+      </div>
+      <div class="range-slider radius" data-slider data-options="start: 1; end: 10;">
+        <span class="range-slider-handle" role="slider" tabindex="0"></span>
+        <span class="range-slider-active-segment"></span>
+        <input type="hidden">
+      </div>
+
+      <div class="misc">
+        <div class="undo" title="Undo">
+          <i class="fa fa-undo"></i>
+        </div>
+        <div class="delete" title="Delete all">
+          <i class="fa fa-close"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="canvas">
+      <canvas width="800px" height="500px"></canvas>
+    </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="js/foundation.slider.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <footer>
+      <p>&copy; Copyright 2015 | Designed and Developed by
+        <a href="www.vinescarlan.ml" title="View profile of creator"> Melvin Escarlan</a>
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
