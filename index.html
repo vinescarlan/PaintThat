@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>PaintThat | A simple painting web application</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,9 +9,13 @@
     <link href="css/css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
   </head>
-
   <body>
-    <!-- Add here a conditional statement for < IE9 that tells users they have unsupported version  -->
+    <!--[if lt IE 9]>
+      <div class="lt-ie-9">
+        <p>You are using an <strong>outdated</strong> browser. Please 
+        <a href="http://browsehappy.com/">upgrade your browser</a> to use this web app.</p>
+      </div>
+    <![endif]-->
     <header>
       <h1><a href="index.html">Paint<span>That</span>.com</a></h1>
       <a href="#">
@@ -92,5 +95,4 @@
     </footer>
     <script src="js/main.js"></script>
   </body>
-
 </html>
