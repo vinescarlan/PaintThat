@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>PaintThat | A simple painting web application</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,6 +10,7 @@
     <link href="css/css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
   </head>
+
   <body>
     <!--[if lt IE 9]>
       <div class="lt-ie-9">
@@ -30,19 +32,19 @@
         <input type="button" class="confirm" value="OK" />
         <div class="rgb-sliders">
           <p>Red</p>
-          <div class="range-slider radius" data-slider data-options="start: 1; end: 255;">
+          <div id="red" class="range-slider radius" data-slider data-options="start: 1; end: 255;">
             <span class="range-slider-handle" role="slider" tabindex="0"></span>
             <span class="range-slider-active-segment"></span>
             <input type="hidden">
           </div>
           <p>Green</p>
-          <div class="range-slider radius" data-slider data-options="start: 1; end: 255;">
+          <div id="green" class="range-slider radius" data-slider data-options="start: 1; end: 255;">
             <span class="range-slider-handle" role="slider" tabindex="0"></span>
             <span class="range-slider-active-segment"></span>
             <input type="hidden">
           </div>
           <p>Blue</p>
-          <div class="range-slider radius" data-slider data-options="start: 1; end: 255;">
+          <div id="blue" class="range-slider radius" data-slider data-options="start: 1; end: 255;">
             <span class="range-slider-handle" role="slider" tabindex="0"></span>
             <span class="range-slider-active-segment"></span>
             <input type="hidden">
@@ -53,7 +55,7 @@
       <div class="tool-dfn">
         <p>Size</p>
       </div>
-      <div class="size range-slider radius" data-slider data-options="start: 1; end: 15;">
+      <div class="size range-slider radius" data-slider data-options="start: 1; end: 100;">
         <span class="range-slider-handle" role="slider" tabindex="0"></span>
         <span class="range-slider-active-segment"></span>
         <input type="hidden">
@@ -62,7 +64,7 @@
       <div class="tool-dfn">
         <p>Fill</p>
       </div>
-      <div class="fill range-slider radius" data-slider data-options="start: 1; end: 10;">
+      <div class="fill range-slider radius" data-slider data-options="start: 0; end: 9;">
         <span class="range-slider-handle" role="slider" tabindex="0"></span>
         <span class="range-slider-active-segment"></span>
         <input type="hidden">
@@ -76,23 +78,27 @@
           <i class="fa fa-close"></i>
         </div>
       </div>
+      <div class="confirm-delete">
+        <p>Are you sure you want to delete your drawing?</p>
+        <input type="button" value="Yes" />
+        <input type="button" value="No" />
+      </div>
     </section>
 
     <section class="canvas">
-      <canvas></canvas>
+      <canvas width="100px" height="100px"></canvas>
     </section>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/foundation.js"></script>
-    <script src="js/foundation.slider.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
     <footer>
       <p>&copy; Copyright 2015 | Designed and Developed by
         <a href="www.vinescarlan.ml" title="View profile of creator"> Melvin Escarlan</a>
       </p>
     </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="js/foundation.slider.js"></script>
     <script src="js/main.js"></script>
   </body>
+
 </html>
