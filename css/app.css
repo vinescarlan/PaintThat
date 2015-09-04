@@ -2,6 +2,9 @@ html,
 body {
   margin: 0 0.3em;
   background: #4ca78b;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  color: #444;
+  font-weight: 900;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -58,6 +61,7 @@ header img:hover {
   max-width: 700px;
   height: 40px;
   border-radius: 2px;
+  position: relative;
   box-shadow: 3px 3px 5px #444;
 }
 .tools div {
@@ -70,17 +74,89 @@ header img:hover {
 .tool-dfn p {
   font-size: 0.8em;
 }
+.color, .prev-color {
+  background: #444;
+  border-radius: 3px;
+  border: 1px solid #fff;
+}
 .color {
   margin: 5px;
-  background: #444;
-  border-radius: 2px;
   width: 30px;
   height: 30px;
-  transition: border 0.3s ease-out;
   cursor: pointer;
+  transition: border 0.3s ease-out;
 }
 .color:hover {
   border: 1px solid #fff;
+}
+.color-palette {
+  background: #a5dbd7;
+  box-shadow: 2px 2px 2px #444;
+  position: absolute;
+  border-radius: 3px;
+  top: 60px;
+  left: 7px;
+  width: 270px;
+  height: 162px;
+}
+.color-palette:before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 6px;
+  width: 0;
+  height: 0;
+  border-bottom: 13px solid #a5dbd7;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+.prev-color {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+.range-slider {
+  height: 10px;
+  border: 1px solid #fff;
+}
+.range-slider-handle {
+  width: 0.7em;
+  height: 1em;
+  top: -0.25em;
+}
+.range-slider-active-segment {
+  background: #0cf;
+  height: 8px;
+}
+.rgb-sliders .range-slider {
+  width: 130px;
+  margin: 5px;
+  float: none !important;
+}
+.rgb-sliders p {
+  margin: 5px;
+  font-weight: 500;
+}
+.confirm {
+  color: white;
+  background: #008CBA;
+  position: absolute;
+  top: 120px;
+  left: 11px;
+  padding: 7px 38px;
+  border: none;
+  border-radius: 3px;
+  transition: background 0.3s ease-out;
+}
+.confirm:hover {
+  background: #07a5d9;
+}
+.size.range-slider, .fill.range-slider {
+  width: 20%;
+  margin: 0.9em 0.6em;
+}
+.misc {
+  float: right !important;
 }
 .fa {
   margin: 0;
@@ -102,33 +178,17 @@ header img:hover {
   top: 0;
   color: #e86767;
 }
-.misc {
-  float: right !important;
-}
-.range-slider {
-  width: 20%;
-  height: 10px;
-  margin: 0.9em 0.6em;
-}
-.range-slider-handle {
-  width: 0.7em;
-  height: 1em;
-  top: -0.25em;
-}
-.range-slider-active-segment {
-  background: #0cf;
-  height: 10px;
-}
 .canvas {
   text-align: center;
 }
 canvas {
   background: #fefefe;
-  cursor: url(../img/pen.png), crosshair;
-  width: 100%;
-  margin-top: 5px;
-  max-width: 800px;
   height: 65vh;
+  max-height: 800px;
+  width: 100%;
+  max-width: 800px;
+  cursor: url(../img/pen.png), crosshair;
+  margin-top: 5px;
   box-shadow: 3px 3px 2px #444;
 }
 
@@ -151,9 +211,6 @@ canvas {
     height: 60px;
   }
 }
-/**************
-    Footer
-*/
 
 footer p {
   color: #eee;
