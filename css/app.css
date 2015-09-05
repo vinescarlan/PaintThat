@@ -2,9 +2,9 @@ html,
 body {
   margin: 0 0.3em;
   background: #4ca78b;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
   color: #444;
-  font-weight: 900;
+  font-weight: bold;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
