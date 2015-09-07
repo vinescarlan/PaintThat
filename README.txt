@@ -1,29 +1,29 @@
-# PaintThat
-## A simple painting web application built with HTML5 canvas, JavaScript, JQuery & Foundation 5 sliders
-**[Try it out] (http://vinescarlan.paintthat.ml/)**
+<h1>PaintThat</h1>
+<h2>A simple painting web application built with HTML5 canvas, JavaScript, JQuery & Foundation 5 sliders</h2>
+<strong>[Try it out] (http://vinescarlan.paintthat.ml/)</strong>
 
-## Tools included
+<h2>Tools included</h2>
 
-**Color preview**
+<strong>Color preview</strong>
 
 * Displays the color that is being used
 * If clicked, it will open a color palette where you can choose colors by sliding the red, green, and blue sliders
 
-**Size**
+<strong>Size</strong>
 
 * Change the size of your pen, simply drag the slider
 
-**Fill**
+<strong>Fill</strong>
 
 * Change the transparency of in used color, simply drag the slider
 
-**Undo**
+<strong>Undo</strong>
 
 * Undo last drawing
 
-**Delete All**
+<strong>Delete All</strong>
 
 * Clear the canvas, will prompt the user for confirmation
 
-##Important!
-**Touch devices is not yet supported!**
+<h2>Important!</h2>
+<strong>Touch devices is not yet supported!</strong>
