@@ -237,6 +237,9 @@ input::-moz-focus-inner {
   border-radius: 3px;
   visibility: hidden;
 }
+.confirm-delete p {
+  margin: 10px;
+}
 .canvas {
   text-align: center;
 }
