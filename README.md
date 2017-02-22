@@ -1,6 +1,6 @@
 <h1>PaintThat</h1>
 <h2>A simple painting web application built with HTML5 canvas, JavaScript, JQuery & Foundation 5 sliders</h2>
-<strong>[Try it out] (http://paintthat.vinescarlan.ml/)</strong>
+<strong>[Try it out] (http://vinescarlan.ml/paintthat)</strong>
 
 <h2>Tools included</h2>
 
